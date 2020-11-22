@@ -1,0 +1,7 @@
+<app-load *ngIf="!data || data.length == 0"></app-load>
+<!-- <div [ngFor]="let dat of data">
+</div> -->
+<div class="card-columns">
+
+    <app-video-card *ngFor="let video of data" [data]="video"></app-video-card>
+</div>

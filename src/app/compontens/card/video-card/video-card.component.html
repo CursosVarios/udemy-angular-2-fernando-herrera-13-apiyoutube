@@ -1,1 +1,7 @@
-<p>video-card works!</p>
+<div class="card">
+    <img class="card-img-top" [src]="data.thumbnails.high.url" alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title">{{data.title}}</h5>
+        <p class="card-text">{{data.description}}</p>
+    </div>
+</div>
