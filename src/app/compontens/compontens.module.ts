@@ -4,6 +4,7 @@ import { NadvarComponent } from "./nadvar/nadvar.component";
 import { FooterComponent } from "./footer/footer.component";
 import { HeaderComponent } from "./header/header.component";
 import { LoadComponent } from "./load/load.component";
+import { VideoCardComponent } from './card/video-card/video-card.component';
 
 const declarations = [
   NadvarComponent,
@@ -13,7 +14,7 @@ const declarations = [
 ];
 
 @NgModule({
-  declarations: [...declarations],
+  declarations: [...declarations, VideoCardComponent],
   imports: [CommonModule],
   exports: [...declarations],
 })
