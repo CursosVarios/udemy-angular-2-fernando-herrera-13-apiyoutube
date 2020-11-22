@@ -2,6 +2,9 @@
     <img class="card-img-top" [src]="data.thumbnails.high.url" alt="Card image cap">
     <div class="card-body">
         <h5 class="card-title">{{data.title}}</h5>
-        <p class="card-text">{{data.description}}</p>
+        <p class="card-text"><strong>Autor:</strong>{{data.channelTitle}}</p>
+        <p class="card-text"><strong>Publicado:</strong>{{data.publishedAt|date}}</p>
     </div>
+    <button type="button" class="btn btn-primary btn-lg btn-block">Ver video </button>
+
 </div>

@@ -24,12 +24,14 @@ export class YoutubeService {
     };
   } */
 
-  params = new HttpParams()
-    .set("key", "AIzaSyAfocPMUpnoH4g8kvNWGaN4n_8w_8EUmQg")
-    .set("part", "snippet")
-    .set("playlistId", "UUuaPTYj15JSkETGnEseaFFg")
-    .set("maxResults", "10")
-    .set("pageToken", this._pagetoken);
+  get params() {
+    return new HttpParams()
+      .set("key", "AIzaSyAfocPMUpnoH4g8kvNWGaN4n_8w_8EUmQg")
+      .set("part", "snippet")
+      .set("playlistId", "UUuaPTYj15JSkETGnEseaFFg")
+      .set("maxResults", "10")
+      .set("pageToken", this._pagetoken);
+  }
 
   constructor(private _http: HttpClient) {}
 
